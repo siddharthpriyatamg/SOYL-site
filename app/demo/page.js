@@ -1,12 +1,15 @@
-
 'use client'
 import { useState } from 'react'
-export const metadata = { title: 'Demo — SOYL' }
+
 export default function Demo(){
-  const [step,setStep]=useState(1);const [lang,setLang]=useState('English + Telugu');const [tone,setTone]=useState('Brave & Kind');const [photos,setPhotos]=useState(12);
+  const [step,setStep]=useState(1);
+  const [lang,setLang]=useState('English + Telugu');
+  const [tone,setTone]=useState('Brave & Kind');
+  const [photos,setPhotos]=useState(12);
+
   return (
     <section className="container py-16">
-      <h1 className="h1">2‑minute Demo</h1>
+      <h1 className="h1">2-minute Demo</h1>
       <p className="lead mt-2">Simulate the flow judges will see.</p>
 
       {step===1 && (
